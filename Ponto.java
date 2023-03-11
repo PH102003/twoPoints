@@ -9,8 +9,12 @@ public class Ponto {
 
     }
     //método
-    public double equaçao(Ponto ponto){
-        double resultado = Math.sqrt(Math.pow((ponto.x -this.x), 2) + Math.pow((ponto.y - this.y), 2));
+    public double equaçao(Ponto segundoPonto){
+        //utilização de um outro parâmetro para servir de "auxiliar" no cálculo da equação, atribuindo um outro valor além do de this.x e this.y
+        
+        double resultado = Math.sqrt(Math.pow((segundoPonto.x -this.x), 2) + Math.pow((segundoPonto.y - this.y), 2));
+        //raiz quadrada ( de (xb - xa)^2 + (yb-ya)^2) ;
         return resultado; 
     }
 }
+
